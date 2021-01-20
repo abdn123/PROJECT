@@ -179,7 +179,7 @@ deleterecord()
             switch(choice)
             {
             case 1:
-                printf("\n\tENTER THE DATE OF RECORD TO BE DELETED:[yyyy-mm-dd]:");
+                printf("\n\tENTER THE DATE OF RECORD TO BE DELETED:(dd-mm-yyyy):");
                 fflush(stdin);
                 gets(filename);
                 fp = fopen (filename,"wb") ;
@@ -195,7 +195,7 @@ deleterecord()
                 printf("\n\tTHE RECORD HAS BEEN DELETED!");
                 break;
             case 2:
-                printf("\n\tENTER THE DATE OF RECORD(yyyy-mm-dd):");
+                printf("\n\tENTER THE DATE OF RECORD(dd-mm-yyyy):");
                 fflush(stdin);
                 gets(filename);
                 fp = fopen (filename, "rb" ) ;
